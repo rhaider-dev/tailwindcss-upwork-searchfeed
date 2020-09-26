@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Upwork clone</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link
+    rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="h-16 shadow-2xl border-solid border-b-2 mx-auto">
+    <div class="container mx-auto flex justify-center items-center">
+      <div class="lg:w-1/4 mt-4">
+        <p class="flex justify-end mr-3 mb-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.4 30" width="106"
+            height="30" role="img" aria-hidden="true">
+            <path fill="#494949"
+              d="M65.4 6.9c-4.5 0-8.1 3.6-8.1 8.1s3.6 8.1 8.1 8.1 8.1-3.6 8.1-8.1-3.6-8.1-8.1-8.1zm0 12.9c-2.6 0-4.8-2.1-4.8-4.8s2.1-4.8 4.8-4.8c2.6 0 4.8 2.1 4.8 4.7 0 2.7-2.1 4.9-4.8 4.9zM83.4 10.8c-2.3 0-4.2 1.9-4.2 4.2v7.7h-3.5V7.4h3.5v2.4c1-1.5 2.7-2.4 4.5-2.4h1.1v3.4h-1.4zM48.2 7.4L50.8 18l2.9-10.6h3.4l-4.4 15.3h-3.5L46.5 12l-2.7 10.7h-3.5L35.9 7.4h3.4L42.2 18l2.7-10.6zM95 14.4c2.6-1.4 4.1-4.1 4.1-7.1h-3.4c0 2.6-2.1 4.6-4.6 4.6h-.5V0h-3.5v22.7h3.5v-7.2h.4c.4 0 .8.2 1 .5l4.9 6.7h4.2L95 14.4z"
+              class="logo-work"></path>
+            <path fill="#6fda44"
+              d="M27.6 6.9c-3.8 0-6.7 2.5-7.9 6.5-1.8-2.7-3.1-5.7-4-8.8h-4.1v10.6c0 2.1-1.7 3.8-3.8 3.8S4 17.3 4 15.2V4.7H0v10.6c0 4.3 3.5 7.9 7.9 7.9s7.9-3.5 7.9-7.9v-1.8c.8 1.7 1.8 3.3 2.9 4.8L16.2 30h4.2l1.8-8.5c1.6 1.1 3.5 1.7 5.5 1.7 4.5 0 8.1-3.6 8.1-8.1-.1-4.5-3.7-8.2-8.2-8.2zm0 12.2c-1.7-.1-3.3-.7-4.6-1.8l.3-1.6v-.1c.3-1.7 1.3-4.6 4.2-4.6 2.2-.1 4 1.7 4.1 3.9.1 2.2-1.7 4-3.9 4.1l-.1.1z">
+            </path>
+          </svg></p>
+      </div>
+      <div class="lg:w-1/4 mt-3 flex">
+        <form class="flex flex-row border border-gray-200 rounded w-64">
+          <span class=""><i class="fa fa-search p-2 text-green-600"></i></span>
+          <input class="appearance-none block w-64 text-gray-700 leading-tight focus:outline-none" type="text"
+            placeholder="Find jobs">
+        </form>
+      </div>
+      <div class="hidden lg:flex w-2/4 mt-4">
+        <div class="flex">
+          <ul class="flex">
+            <li><a href="#" class="text-green-600">Find work</a></li>
+            <li class="ml-4"><a href="#">My Jobs</a></li>
+            <li class="ml-4"><a href="#">Reports</a></li>
+            <li class="ml-4"><a href="#">Messages</a></li>
+          </ul>
+          <ul class="flex ml-5">
+            <li><i class="fa fa-question ml-4"></i></li>
+            <li><i class="fa fa-bell-o ml-4"></i></li>
+            <li><i class="fa fa-paper-plane ml-4"></i></li>
+            <li><img src="https://api.adorable.io/avatars/400/abott@adorable.io.png" alt="avatar"
+                class="rounded-full h-8 w-8 ml-4 -m-1"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-200 h-full">
+    <div class="container mx-auto">
+      <div class="pt-8">
+        <div class="rounded bg-white shadow-lg lg:mx-24">
+          <div class="flex justify-items-start h-16">
+            <ul class="flex ml-5 pl-5 mt-8">
+              <li><a href="#" class="text-green-600 border-b-4 border-solid border-green-600">Search</a></li>
+              <li class="ml-4"><a href="#">Saved Jobs</a></li>
+            </ul>
+          </div>
+          <div class="bg-gray-200 py-12 border-solid border-gray-300 border-2">
+            <div class="flex">
+              <div class="w-3/4 pl-8">
+                <form class="flex flex-row border border-gray-100 rounded w-full">
+                  <input class="pl-3 h-10 appearance-none block w-full text-gray-700 leading-tight focus:outline"
+                    type="text" placeholder="Search for jobs">
+                  <button class="bg-green-600 w-10"><i class="fa fa-search text-white"></i></button>
+                </form>
+              </div>
+              <div class="hidden lg:flex w-1/4 ml-5">
+                <button
+                  class="bg-white text-green-600 font-semibold py-2 px-4 border border-grey-500 hover:shadow-xl rounded">
+                  <i class="fa fa-filter"></i> Filters
+                </button>
+                <button
+                  class="bg-white text-green-600 font-semibold py-2 px-4 border border-grey-500 hover:shadow-xl rounded">
+                  <i class="fa fa-folder"></i> Saved search
+                </button>
+              </div>
+            </div>
+            <div class="mt-5">
+              <div class="px-6 pt-4 pb-2 pl-8">
+                <span
+                  class="inline-block bg-gray-400 px-3 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">photography
+                  <i class="fa fa-close"></i></span>
+                <span class="inline-block bg-gray-400 px-3 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">travel <i
+                    class="fa fa-close"></i></span>
+                <span class="inline-block bg-gray-400 px-3 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">winter <i
+                    class="fa fa-close"></i></span>
+                <span class="inline-block px-3 py-2 text-sm font-semibold text-green-600 mr-2 mb-2"><a href="#">
+                    <h3>Clear filters</h3>
+                  </a></span>
+              </div>
+            </div>
+            <div class="flex justify-between">
+              <div class="pl-8 pt-3">
+                <i class="fa fa-rss text-green-600"></i><span class="text-black ml-3">5,3634 </span><span
+                  class="text-gray-700">Jobs found</span>
+              </div>
+              <div class="hidden lg:flex px-5">
+                <div class="flex">
+                  <span class="mx-3">Sort :</span>
+                  <select
+                    class="block appearance-none bg-white border border-gray-200 text-gray-700 py-1 px-4 pr-8 shadow-lg rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-state">
+                    <option>New Mexico</option>
+                    <option>Missouri</option>
+                    <option>Texas</option>
+                  </select>
+                </div>
+                <div class="hidden lg:flex">
+                  <span class="mx-3">View :</span>
+                  <select
+                    class="block appearance-none bg-white border border-gray-200 text-gray-700 py-1 px-4 pr-8 shadow-lg rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-state">
+                    <option><i class="fa fa-filter text-gray-600"></i>Filter</option>
+                    <option>Missouri</option>
+                    <option>Texas</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Jobs card-->
+          <div class="w-full py-12 lg:flex border border-gray-200">
+            <div
+              class="lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r  flex flex-col justify-between leading-normal px-8">
+              <div class="mb-8">
+                <div class="text-gray-900 font-bold text-xl mb-2">Romania based only, market research and spreadsheet
+                  creation.</div>
+                <p class="text-gray-700 text-base pt-5 pb-2"><span class="text-black">Fixed Price-</span> Entry level
+                  -Est budgt $25</p>
+                <p class="text-gray-700 text-base">Immediate need-web research, I am seeking a professional to assist in
+                  web research and phone calls to create an excel sheet.
+                  Need to find companies in Romania make uniforms, especially for private securities companies and the
+                  army; for each company, I need the production manager's email contact.</p>
+              </div>
+              <div class="flex items-center">
+                <div class="text-sm">
+                  <p class="text-gray-900 leading-none">Jonathan Reinink</p>
+                  <p class="text-gray-600">Aug 18</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full py-12 lg:flex border border-gray-200">
+            <div
+              class="lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r  flex flex-col justify-between leading-normal px-8">
+              <div class="mb-8">
+                <div class="text-gray-900 font-bold text-xl mb-2">Romania based only, market research and spreadsheet
+                  creation.</div>
+                <p class="text-gray-700 text-base pt-5 pb-2"><span class="text-black">Fixed Price-</span> Entry level
+                  -Est budgt $25</p>
+                <p class="text-gray-700 text-base">Immediate need-web research, I am seeking a professional to assist in
+                  web research and phone calls to create an excel sheet.
+                  Need to find companies in Romania make uniforms, especially for private securities companies and the
+                  army; for each company, I need the production manager's email contact.</p>
+              </div>
+              <div class="flex items-center">
+                <div class="text-sm">
+                  <p class="text-gray-900 leading-none">Jonathan Reinink</p>
+                  <p class="text-gray-600">Aug 18</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full py-12 lg:flex border border-gray-200">
+            <div
+              class="lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r  flex flex-col justify-between leading-normal px-8">
+              <div class="mb-8">
+                <div class="text-gray-900 font-bold text-xl mb-2">Romania based only, market research and spreadsheet
+                  creation.</div>
+                <p class="text-gray-700 text-base pt-5 pb-2"><span class="text-black">Fixed Price-</span> Entry level
+                  -Est budgt $25</p>
+                <p class="text-gray-700 text-base">Immediate need-web research, I am seeking a professional to assist in
+                  web research and phone calls to create an excel sheet.
+                  Need to find companies in Romania make uniforms, especially for private securities companies and the
+                  army; for each company, I need the production manager's email contact.</p>
+              </div>
+              <div class="flex items-center">
+                <div class="text-sm">
+                  <p class="text-gray-900 leading-none">Jonathan Reinink</p>
+                  <p class="text-gray-600">Aug 18</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--pagination-->
+          <div class="bg-gray-200 py-12 border-solid border-gray-300 border-2">
+            <div class="flex lg:justify-between">
+              <div class="lg:flex px-5 pt-3 hidden">
+                <span class="mx-3">Jobs per page :</span>
+                <select
+                  class="block appearance-none bg-white border border-gray-200 text-gray-700 py-1 px-4 pr-8 shadow-lg rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-state">
+                  <option>10</option>
+                  <option>Missouri</option>
+                  <option>Texas</option>
+                </select>
+              </div>
+              <div class="mx-auto lg:m-0 lg:px-5">
+                <nav class="flex shadow-sm">
+                  <a href="#"
+                    class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-500 hover:text-gray-400 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150"
+                    aria-label="Previous">
+                    <!-- Heroicon name: chevron-left -->
+                    <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd"
+                        d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                  <a href="#"
+                    class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+                    1
+                  </a>
+                  <a href="#"
+                    class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+                    2
+                  </a>
+                  <a href="#"
+                    class="hidden md:inline-flex -ml-px relative items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+                    3
+                  </a>
+                  <span
+                    class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700">
+                    ...
+                  </span>
+                  <a href="#"
+                    class="hidden md:inline-flex -ml-px relative items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+                    8
+                  </a>
+                  <a href="#"
+                    class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+                    9
+                  </a>
+                  <a href="#"
+                    class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+                    10
+                  </a>
+                  <a href="#"
+                    class="-ml-px relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-500 hover:text-gray-400 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150"
+                    aria-label="Next">
+                    <!-- Heroicon name: chevron-right -->
+                    <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-10"></div>
+  </div>
+  <!--footer-->
+  <div class="h-auto bg-blue-800">
+    <div class="lg:flex md:flex pl-3 lg:p-16 md:p-16 lg:mx-auto lg:container lg:text-center">
+      <div class="py-4 lg:w-1/4 md:w-1/4">
+        <ul class="text-left lg:pl-20 md:px-5">
+          <li class="text-white"><a href="#">About us</a></li>
+          <li class="text-white"><a href="#">Feedback</a></li>
+          <li class="text-white"><a href="#">Community</a></li>
+        </ul>
+      </div>
+      <div class="py-4 lg:w-1/4 md:w-1/4">
+        <ul class="text-left md:px-5">
+          <li class="text-white"><a href="#">Trust, Safety & Security</a></li>
+          <li class="text-white"><a href="#">Help & Support</a></li>
+          <li class="text-white"><a href="#">Upwork Foundation</a></li>
+        </ul>
+      </div>
+      <div class="py-4 lg:w-1/4 md:w-1/4">
+        <ul class="text-left md:px-5">
+          <li class="text-white"><a href="#">Terms of Service</a></li>
+          <li class="text-white"><a href="#">Privacy Policy</a></li>
+          <li class="text-white"><a href="#">Accessibility</a></li>
+        </ul>
+      </div>
+      <div class="py-4 lg:w-1/4 md:w-1/4">
+        <ul class="text-left md:px-5">
+          <li class="text-white"><a href="#">Desktop App</a></li>
+          <li class="text-white"><a href="#">Cookie Policy</a></li>
+          <li class="text-white"><a href="#">Enterprise Solutions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="py-3 lg:flex md:flex pl-3 md:pl-0 lg:pl-16 lg:mx-auto md:mx-auto lg:container md:container lg:text-center lg:justify-between md:justify-between">
+      <div class="lg:flex md:flex mt-2 lg:m-0 md:m-0">
+        <p class="text-white lg:pl-20 pt-2">Follow us</p>
+        <div class="flex">
+          <div class="h-10 w-10 rounded-full bg-gray-700 mr-1 lg:mx-2 md:mx-2">
+            <i class="fa fa-facebook text-white p-3"></i>
+          </div>
+          <div class="h-10 w-10 rounded-full bg-gray-700 mx-1">
+            <i class="fa fa-linkedin text-white p-3"></i>
+          </div>
+          <div class="h-10 w-10 rounded-full bg-gray-700 mx-1">
+            <i class="fa fa-twitter text-white p-3"></i>
+          </div>
+          <div class="h-10 w-10 rounded-full bg-gray-700 mx-1">
+            <i class="fa fa-youtube text-white p-3"></i>
+          </div>
+          <div class="h-10 w-10 rounded-full bg-gray-700 mx-1">
+            <i class="fa fa-instagram text-white p-3"></i>
+          </div>
+        </div>
+      </div>
+      <div class="lg:flex md:flex mt-2 lg:m-0 md:m-0 lg:pr-40">
+        <p class="text-white md:pl-5 pt-2">Mobile App</p>
+        <div class="flex">
+          <div class="h-10 w-10 rounded-full bg-gray-700 mr-1 lg:mx-2 md:mx-2">
+            <i class="fa fa-android text-white p-3"></i>
+          </div>
+          <div class="h-10 w-10 rounded-full bg-gray-700 mx-1">
+            <i class="fa fa-apple text-white p-3"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="text-white py-5 text-center">© 2015 - 2020 Upwork® Global Inc.</p>
+    </div>
+  </div>
+</body>
+</html>
